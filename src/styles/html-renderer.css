@@ -1,0 +1,127 @@
+/* Styles for rendered HTML content */
+.rendered-html {
+  line-height: 1.6;
+}
+
+/* Preview mode styles for homepage cards */
+.rendered-html.preview-mode {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.rendered-html.preview-mode.truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rendered-html p {
+  margin-bottom: 0.75rem;
+}
+
+.rendered-html p:last-child {
+  margin-bottom: 0;
+}
+
+.rendered-html a {
+  color: #0284c7;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.rendered-html a:hover {
+  color: #0369a1;
+  text-decoration: none;
+}
+
+.rendered-html.preview-mode a {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+.rendered-html.preview-mode a:hover {
+  color: #0369a1;
+}
+
+.rendered-html strong, .rendered-html b {
+  font-weight: 600;
+}
+
+.rendered-html em, .rendered-html i {
+  font-style: italic;
+}
+
+.rendered-html u {
+  text-decoration: underline;
+}
+
+.rendered-html ul {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.rendered-html ol {
+  list-style-type: decimal;
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.rendered-html li {
+  margin-bottom: 0.25rem;
+}
+
+.rendered-html blockquote {
+  border-left: 4px solid #e2e8f0;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #64748b;
+}
+
+.rendered-html code {
+  background-color: #f1f5f9;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875em;
+}
+
+.rendered-html pre {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.rendered-html pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.rendered-html h1, .rendered-html h2, .rendered-html h3,
+.rendered-html h4, .rendered-html h5, .rendered-html h6 {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.rendered-html h1:first-child,
+.rendered-html h2:first-child,
+.rendered-html h3:first-child,
+.rendered-html h4:first-child,
+.rendered-html h5:first-child,
+.rendered-html h6:first-child {
+  margin-top: 0;
+}
+
+.rendered-html h1 { font-size: 1.5em; }
+.rendered-html h2 { font-size: 1.375em; }
+.rendered-html h3 { font-size: 1.25em; }
+.rendered-html h4 { font-size: 1.125em; }
+.rendered-html h5 { font-size: 1em; }
+.rendered-html h6 { font-size: 0.875em; }

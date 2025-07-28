@@ -1,0 +1,126 @@
+/* Chatbot specific animations and styles */
+
+.chatbot-enter {
+  transform: translateY(100%) scale(0.8);
+  opacity: 0;
+}
+
+.chatbot-enter-active {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.chatbot-exit {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.chatbot-exit-active {
+  transform: translateY(100%) scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+/* Message bubble animations */
+.message-bubble-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.message-bubble-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-out;
+}
+
+/* Typing indicator dots animation */
+@keyframes typing-dot {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+.typing-dot-1 {
+  animation: typing-dot 1.4s infinite ease-in-out;
+  animation-delay: 0s;
+}
+
+.typing-dot-2 {
+  animation: typing-dot 1.4s infinite ease-in-out;
+  animation-delay: 0.16s;
+}
+
+.typing-dot-3 {
+  animation: typing-dot 1.4s infinite ease-in-out;
+  animation-delay: 0.32s;
+}
+
+/* Pulse animation for the chatbot button */
+@keyframes chatbot-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.chatbot-button-pulse {
+  animation: chatbot-pulse 2s infinite;
+}
+
+/* Scrollbar styling for chat messages */
+.chatbot-messages::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth hover effects */
+.message-actions {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.quick-action-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.quick-action-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Status indicator animation */
+@keyframes status-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.status-connecting {
+  animation: status-blink 1s infinite;
+}
